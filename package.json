@@ -5,9 +5,6 @@
   "main": "index.js",
   "scripts": {
     "watch:test": "npm t -- --watch",
-    "test": "npm-run-all test:*",
-    "test:unit": "mocha test/unit/*.js -r jsdom-global/register -r babel-core/register",
-    "test:integration": "mocha test/integration/bootstrap.js --recursive test/integration/*.test.js -r babel-core/register -r babel-polyfill -t 15000",
     "prebuild": "rimraf dist",
     "build": "webpack"
   },
@@ -41,8 +38,8 @@
     "rimraf": "2.6.2",
     "sinon": "4.4.6",
     "uglifyjs-webpack-plugin": "1.2.4",
-    "webpack": "4.35.3",
-    "webpack-cli": "3.3.5",
-    "webpack-merge": "4.1.2"
+    "webpack": "^4.X",
+    "webpack-cli": "^3.X",
+    "webpack-merge": "^4.X"
   }
 }
