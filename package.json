@@ -1,15 +1,9 @@
 {
-  "name": "@wealthica/wealthica.js",
-  "version": "0.0.16",
-  "description": "Official Wealthica Add-on Library",
-  "main": "index.js",
   "scripts": {
     "watch:test": "npm t -- --watch",
     "prebuild": "rimraf dist",
     "build": "webpack"
   },
-  "author": "Wealthica Financial Technology Inc. <hello@wealthica.com> (https://wealthica.com/)",
-  "license": "MIT",
   "dependencies": {
     "es6-promise": "4.2.2",
     "eventemitter3": "3.0.0",
